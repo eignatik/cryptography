@@ -16,6 +16,6 @@ String result = new Cryptographer(5432).crypt("Hello World!").getMessage(); // r
 result = new Cryptographer(5432).decrypt(result).getMessage(); // returns Hello World string encrypted by key 5432
 ```
 
-## How to crypt decrypt?
+## How to crypt/decrypt?
 Set crypt key that represent numbers that will be overlayed on the message and move each character accoring to number in key. First number also defines forward of crypting.
 Decrypting works the same way - set key and call decrypt message. Direction of crypting will be got from your key automaticaly. If you use the same key you crypted then you will get correctly encrypted message
